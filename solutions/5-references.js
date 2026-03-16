@@ -5,7 +5,6 @@ const reverse = (array) => {
         array[array.length - 1 - i] = array[i];
         array[i] = tmp;
     }
-    return array;
 };
 
 export { reverse };

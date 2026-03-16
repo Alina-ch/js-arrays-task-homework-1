@@ -4,7 +4,7 @@ const getWeekends = (format = 'long') => {
         return 'Error';
     }
 
-    if (format == 'short') {
+    if (format === 'short') {
         return ['sat', 'sun'];
     }
     else {

@@ -7,23 +7,14 @@ const flatten = (array) => {
     let newArray = []; 
     for (const item of array) {
         if (Array.isArray(item)) {
-            if (newArray.length !== 0) {
-                let [...rest] = newArray;
-                newArray = [...rest,...item];
-            }
-            else {
-                newArray = [...item];
-            }
-            
+            newArray.push(...item);
         }
         else {
             newArray.push(item);
         }
     }
-
-    array = newArray;
     
-    return array;
+    return newArray;
 };
 
 export { flatten };

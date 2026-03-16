@@ -1,5 +1,5 @@
 // BEGIN
-export default countUniqChars = (text) =>  {
+const countUniqChars = (text) =>  {
     if (text === '') {
         return 0;
     }
@@ -15,4 +15,6 @@ export default countUniqChars = (text) =>  {
 
     return count;
 };
+
+export default countUniqChars;
 // END

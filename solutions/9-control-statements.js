@@ -1,7 +1,7 @@
 // BEGIN
-export default getTotalAmount = (arrayWithCurrency, currencyName) => {
+const getTotalAmount = (arrayWithCurrency, currencyName) => {
     if (arrayWithCurrency.length === 0) {
-        return 'No currency';
+        return 0;
     }
 
     let sum = 0;
@@ -13,5 +13,7 @@ export default getTotalAmount = (arrayWithCurrency, currencyName) => {
     
     return sum;
 };
+
+export default getTotalAmount;
 // END
 

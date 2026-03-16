@@ -1,5 +1,5 @@
 // BEGIN
-export default calculateAverage = (array) => {
+const calculateAverage = (array) => {
     if (array.length === 0) {
         return null;
     }
@@ -11,4 +11,6 @@ export default calculateAverage = (array) => {
     
     return sum / array.length;
 };
+
+export default calculateAverage;
 // END

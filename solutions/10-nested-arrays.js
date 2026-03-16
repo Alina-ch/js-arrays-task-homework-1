@@ -1,5 +1,5 @@
 // BEGIN
-export default getSuperSeriesWinner = (scores) => {
+const getSuperSeriesWinner = (scores) => {
     if (scores.length === 0) {
         return null;
     }
@@ -19,4 +19,6 @@ export default getSuperSeriesWinner = (scores) => {
     
     return (victoriesCanada > victoriesUSSR ? 'canada' : (victoriesCanada < victoriesUSSR ? 'ussr' : null));  
 };
+
+export default getSuperSeriesWinner;
 // END

@@ -1,5 +1,5 @@
 // BEGIN
-export default buildDefinitionList = (definitions) => {
+const buildDefinitionList = (definitions) => {
     if (definitions.length === 0) {
         return '';
     }
@@ -15,4 +15,5 @@ export default buildDefinitionList = (definitions) => {
     return result;
 };
 
+export default buildDefinitionList;
 // END
