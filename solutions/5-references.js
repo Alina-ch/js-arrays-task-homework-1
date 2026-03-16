@@ -7,5 +7,6 @@ const reverse = (array) => {
     }
     return array;
 };
+
 export { reverse };
 // END

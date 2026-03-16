@@ -1,8 +1,9 @@
 // BEGIN
 export default getSuperSeriesWinner = (scores) => {
-    // if (scores.length === 0) {
-    //     return null;
-    // }
+    if (scores.length === 0) {
+        return null;
+    }
+    
     let victoriesCanada = 0;
     let victoriesUSSR = 0;
     for (let i = 0; i < scores.length; i += 1) {
@@ -16,7 +17,6 @@ export default getSuperSeriesWinner = (scores) => {
         }
     }
     
-    return (victoriesCanada > victoriesUSSR ? 'canada' : (victoriesCanada < victoriesUSSR ? 'ussr' : null));
-    
-}
+    return (victoriesCanada > victoriesUSSR ? 'canada' : (victoriesCanada < victoriesUSSR ? 'ussr' : null));  
+};
 // END

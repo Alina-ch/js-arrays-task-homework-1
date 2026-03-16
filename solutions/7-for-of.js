@@ -8,6 +8,7 @@ export default calculateAverage = (array) => {
     for (const element of array) {
         sum += element;
     }
+    
     return sum / array.length;
 };
 // END

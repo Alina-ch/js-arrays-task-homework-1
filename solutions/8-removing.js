@@ -11,6 +11,7 @@ export default getSameParity = (array) => {
         }
 
     }
+    
       return newArray;
 };
 // END

@@ -10,7 +10,9 @@ const calculateSum = (array) => {
             sum += element;
         }
     }
+    
     return sum;
 };
+
 export { calculateSum };
 // END

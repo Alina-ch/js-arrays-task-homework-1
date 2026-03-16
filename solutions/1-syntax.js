@@ -12,5 +12,5 @@ const getWeekends = (format = 'long') => {
     }
 };
 
-export{ getWeekends };
+export { getWeekends };
 // END

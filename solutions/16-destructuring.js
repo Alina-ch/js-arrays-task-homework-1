@@ -11,15 +11,17 @@ const getTheNearestLocation = (locations, currentPoint) => {
     return null;
   }
 
-  let [,nearestLocation] = locations;
+  let [nearestLocation] = locations;
 
   for (const location of locations) {
     let [, coordinatesLocation] = location;
     let [, coordinatesNearestLocation] = nearestLocation;
+    
     if (getDistance(coordinatesNearestLocation, currentPoint) > getDistance(coordinatesLocation, currentPoint)) {
       nearestLocation = location;
     }
   }
+
   return nearestLocation;
 };
 

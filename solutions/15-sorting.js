@@ -9,6 +9,7 @@ export default bubbleSort = (array) => {
             }
         }
     }
+
     return array;
-}
+};
 // END

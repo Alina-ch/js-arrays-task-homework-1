@@ -8,10 +8,11 @@ export default buildDefinitionList = (definitions) => {
     for (const definition of definitions) {
         newDefinitions.push(`<dt>${definition[0]}</dt><dd>${definition[1]}</dd>`);
     }
+
     const stringDefinitions = newDefinitions.join('');
     let result = `<dl>${stringDefinitions}</dl>`;
-    return result;
 
+    return result;
 };
 
 // END
