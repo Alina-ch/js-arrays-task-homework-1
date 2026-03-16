@@ -4,7 +4,7 @@ const flatten = (array) => {
         return [];
     }
 
-    let newArray = []; 
+    const newArray = []; 
     for (const item of array) {
         if (Array.isArray(item)) {
             newArray.push(...item);

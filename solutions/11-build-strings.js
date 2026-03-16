@@ -4,7 +4,7 @@ const buildDefinitionList = (definitions) => {
         return '';
     }
 
-    let newDefinitions = [];
+    const newDefinitions = [];
     for (const definition of definitions) {
         newDefinitions.push(`<dt>${definition[0]}</dt><dd>${definition[1]}</dd>`);
     }

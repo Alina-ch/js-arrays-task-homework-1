@@ -4,7 +4,7 @@ const getMax = (array) => {
         return null;
     }
     
-    let [first, ... rest] = array;
+    const [first, ... rest] = array;
     let max = first;
     for (const item of rest) {
         max = item > max ? item : max;
